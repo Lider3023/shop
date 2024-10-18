@@ -1,0 +1,46 @@
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff; 
+    padding: 20px;
+margin: 10px 50px;
+.cartLogo{
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    z-index: 1;
+}
+    h1 {
+        color: #ffcc00; 
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+        gap: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 25px;
+        cursor: pointer;
+        .active {
+            font-weight: bold;
+            color: #ffcc00;
+            border: 2px solid #ffcc00; 
+            border-radius: 120px;
+            padding: 10px;
+            transition: 0.1s ;
+        }
+
+    }
+}

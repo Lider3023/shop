@@ -1,0 +1,120 @@
+
+.product-modal {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1; 
+    .stick{
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: 4px;
+        border-radius: 10px;
+        background-color: #333;
+        display: flex;
+        gap: 10px;
+        position: absolute;
+    }
+    .modal-content {
+        background-color: #fff;
+        border-radius: 10px; 
+        padding: 20px;
+        width: 90%;
+        max-width: 600px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        .info{
+            
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            position: relative;
+        }
+        h2 {
+            color: #333; 
+            margin-bottom: 15px; 
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+            .swiper-container {
+                width: 100%;
+                height: auto;
+
+                .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        p {
+            color: #666; 
+            margin: 10px 0; 
+            text-align: left;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            color: #28a745; 
+            font-weight: bold;
+        }
+
+        .stock {
+            font-size: 0.9rem;
+            color: #ffcc00; 
+            margin-bottom: 15px; 
+        }
+
+        .amount-control {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 50px;
+            right: 30px;
+
+            button {
+                background-color: #ffcc00; 
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #662d91; 
+                }
+            }
+        }
+
+        button.add-to-cart {
+            margin-top: 15px;
+            background-color: #007BFF; 
+            border-radius: 5px;
+            cursor: pointer;
+            width: 180px;
+            height: 50px;
+            transition:  0.3s ease;
+            position: absolute;
+            bottom: -10px;
+            right: 5px;
+            &:hover {
+                background-color: #a13bf0; 
+                border-radius: 10px;
+            }
+        }
+    }
+}

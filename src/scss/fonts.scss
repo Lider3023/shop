@@ -1,0 +1,12 @@
+$InriaSans:  ('Light', 300),
+                    ('Regular', 400),
+                    ('SemiBold', 600),
+                    ('Bold', 700);
+            
+@each $name, $weight in $InriaSans {
+    @font-face {
+        font-family: 'InriaSans';
+        src: url('../assets/fonts/InriaSans-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}

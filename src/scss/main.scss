@@ -1,0 +1,64 @@
+@import '../components/cart.scss';
+@import '../components/home.scss';
+@import '../components/loader.scss';
+@import '../components/ProductCard.scss';
+@import '../components/ProductModal.scss';
+@import '../components/SortingSelect.scss';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'InriaSans';
+}
+a {
+  text-decoration: none;
+  
+}
+ul {
+  list-style: none;
+  
+}
+.container{
+  width: 100%;
+  padding: 0 15px;
+  margin:  0 auto;
+}
+button{
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+select{
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+option{
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+.nav{
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+ 
+  &__list{
+    display: flex;
+    gap: 70px;
+    li{
+a{
+  color: #ccc;
+  padding: 10px;
+  background: #000;
+  border-radius: 10px;
+}
+    }
+  }
+}
+
